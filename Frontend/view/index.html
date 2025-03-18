@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../assets/crown.png" type="image/x-icon">
+    <title>Customizador de Personagens</title>
+    <script src="../controller/listener.js" type="module"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Crie seu Personagem!</h1>
+    </header>
+
+    <main>
+        <form id="char" method="POST">
+            <fieldset>
+                <legend>Informações Gerais</legend>
+                <label for="name">Nome do Personagem:</label>
+                <input type="text" id="name" required autocomplete="on">
+            </fieldset>
+
+            <fieldset>
+                <legend>Combate</legend>
+                
+                <section>
+                    <h2>Elemento</h2>
+                    <div>
+                        <input type="radio" id="anemo" name="vision" value="Anemo" required>
+                        <label for="anemo">Vento</label>
+                        
+                        <input type="radio" id="cryo" name="vision" value="Cryo">
+                        <label for="cryo">Gelo</label>
+                        
+                        <input type="radio" id="geo" name="vision" value="Geo">
+                        <label for="geo">Pedra</label>
+                        
+                        <input type="radio" id="hydro" name="vision" value="Hydro">
+                        <label for="hydro">Água</label>
+                        
+                        <input type="radio" id="electro" name="vision" value="Electro">
+                        <label for="electro">Elétrico</label>
+                        
+                        <input type="radio" id="dendro" name="vision" value="Dendro">
+                        <label for="dendro">Planta</label>
+                        
+                        <input type="radio" id="pyro" name="vision" value="Pyro">
+                        <label for="pyro">Fogo</label>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Arma</h2>
+                    <div>
+                        <input type="radio" id="polearm" name="weapon" value="Polearm" required>
+                        <label for="polearm">Lança</label>
+
+                        <input type="radio" id="catalyst" name="weapon" value="Catalyst">
+                        <label for="catalyst">Livro</label>
+
+                        <input type="radio" id="bow" name="weapon" value="Bow">
+                        <label for="bow">Arco</label>
+
+                        <input type="radio" id="claymore" name="weapon" value="Claymore">
+                        <label for="claymore">Espadão</label>
+
+                        <input type="radio" id="sword" name="weapon" value="Sword">
+                        <label for="sword">Espada</label>
+                    </div>
+                </section>
+            </fieldset>
+
+            <fieldset>
+                <legend>Bio</legend>
+
+                <section>
+                    <h2>Emoções Predominantes</h2>
+                    <div>
+                        <input type="checkbox" id="cheerful" name="emotions" value="1">
+                        <label for="cheerful">Animado</label>
+
+                        <input type="checkbox" id="reserved" name="emotions" value="2">
+                        <label for="reserved">Reservado</label>
+
+                        <input type="checkbox" id="hardworking" name="emotions" value="3">
+                        <label for="hardworking">Esforçado</label>
+
+                        <input type="checkbox" id="slacker" name="emotions" value="4">
+                        <label for="slacker">Preguiçoso</label>
+
+                        <input type="checkbox" id="scholar" name="emotions" value="5">
+                        <label for="scholar">Estudioso</label>
+
+                        <input type="checkbox" id="talkative" name="emotions" value="6">
+                        <label for="talkative">Falador</label>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Hobbies</h2>
+                    <div>
+                        <input type="checkbox" id="cook" name="hobbies" value="1">
+                        <label for="cook">Cozinhar</label>
+
+                        <input type="checkbox" id="play" name="hobbies" value="2">
+                        <label for="play">Tocar instrumento</label>
+
+                        <input type="checkbox" id="read" name="hobbies" value="3">
+                        <label for="read">Ler</label>
+
+                        <input type="checkbox" id="fight" name="hobbies" value="4">
+                        <label for="fight">Lutar</label>
+
+                        <input type="checkbox" id="camp" name="hobbies" value="5">
+                        <label for="camp">Acampar</label>
+
+                        <input type="checkbox" id="hunt" name="hobbies" value="6">
+                        <label for="hunt">Caçar</label>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>História do Personagem</h2>
+                    <textarea id="lore" rows="5" cols="40" autocomplete="on"></textarea>
+                </section>
+            </fieldset>
+
+            <button type="submit">Criar Personagem</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ALManriqueJr. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
